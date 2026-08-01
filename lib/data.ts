@@ -18,7 +18,7 @@ export const site = {
 
 export const about = {
   paragraphs: [
-    "I'm a Systems and Computing Engineer passionate about technology, with 3+ years of experience building software for the healthcare, education, and professional-association sectors.",
+    "I'm a Systems and Computing Engineer passionate about technology, with 3+ years of experience building software for the healthcare, government, and education sectors.",
     "I work across the whole stack — REST APIs and microservices with NestJS and ASP.NET Core, frontends with React and Next.js, and event-driven architectures on Apache Kafka — applying Hexagonal Architecture, DDD, and SOLID principles.",
     "On the platform side, I provision cloud infrastructure with Terraform on OCI and Azure, containerize with Docker and Kubernetes, and automate delivery with CI/CD pipelines.",
   ],
@@ -70,6 +70,7 @@ export const experience = [
       "Built a home-healthcare platform connecting patients, corporate clients, and care staff — from service request to PDF quote and contract.",
       "ASP.NET Core 9 + NestJS + React; JWT/RBAC security with tablet digital signature — approved on the first security review.",
       "Bulk Excel ingestion pipeline handling 50,000+ records per batch, with validation and automatic rollback.",
+      "Built NOVA, a multi-tenant platform for municipal governments: development plans aligned with UN SDGs, budget tracking, and evidence workflows on AWS S3 (ASP.NET Core, .NET 10, PostgreSQL).",
     ],
   },
   {
@@ -85,6 +86,13 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "NOVA — Municipal Government Platform",
+    description:
+      "Multi-tenant web platform for Colombian municipal governments (alcaldías): 4-year municipal development plans aligned with UN SDGs, budget tracking, and evidence-based activity monitoring with documents stored on AWS S3.",
+    stack: ["ASP.NET Core", ".NET 10", "PostgreSQL", "EF Core", "AWS S3", "Docker"],
+    link: null,
+  },
   {
     title: "Event-Driven Integration Layer",
     description:
