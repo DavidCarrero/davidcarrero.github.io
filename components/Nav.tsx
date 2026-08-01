@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import ThemeToggle from "./ThemeToggle";
 import { site } from "@/lib/data";
 
 const links = [
@@ -54,6 +55,9 @@ export default function Nav() {
             >
               GitHub ↗
             </a>
+          </li>
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
       </nav>

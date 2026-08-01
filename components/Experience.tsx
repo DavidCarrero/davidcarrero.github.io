@@ -55,11 +55,29 @@ export default function Experience() {
             >
               <span
                 className={`absolute top-2 w-3.5 h-3.5 rounded-full bg-accent ring-4 ring-teal-400/20 left-0 md:left-auto ${
-                  i % 2 === 0 ? "md:-right-[calc(2.5rem+7px)]" : "md:-left-[calc(2.5rem+7px)]"
+                  i % 2 === 0
+                    ? "md:-right-[calc(2.5rem_+_7px)] md:translate-x-1/2"
+                    : "md:-left-[calc(2.5rem_+_7px)] md:-translate-x-1/2"
                 }`}
               />
               <article className="card p-6">
-                <p className="font-mono text-xs text-accent mb-2">{job.period}</p>
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <p className="font-mono text-xs text-accent pt-1">{job.period}</p>
+                  {job.logo && (
+                    <span
+                      className={`logo-box ${
+                        job.logoBg === "light"
+                          ? "bg-light-chip"
+                          : job.logoBg === "dark"
+                            ? "bg-dark-chip"
+                            : ""
+                      }`}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={job.logo} alt={job.company} loading="lazy" />
+                    </span>
+                  )}
+                </div>
                 <h3 className="text-lg font-semibold">{job.role}</h3>
                 <p className="text-muted text-sm mb-4">{job.company}</p>
                 <ul className="space-y-2 text-sm text-muted leading-relaxed">

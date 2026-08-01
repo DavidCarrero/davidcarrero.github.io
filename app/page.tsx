@@ -1,6 +1,7 @@
 import SmoothScroll from "@/components/SmoothScroll";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import TechMarquee from "@/components/TechMarquee";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <TechMarquee />
         <About />
         <Experience />
         <Projects />

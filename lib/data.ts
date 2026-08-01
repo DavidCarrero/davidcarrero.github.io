@@ -8,8 +8,11 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/davidandrescarrero/",
   github: "https://github.com/DavidCarrero",
   certs: [
-    "Oracle Cloud Infrastructure Architect Associate (2026)",
-    "ISO 27001:2022 Internal Auditor",
+    {
+      name: "Oracle Cloud Infrastructure Architect Associate (2026)",
+      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=3561B448B830901E17CF3C5D128A2745E58CABDF8E4DDB9901F6BB5AB5DB83CD",
+    },
+    { name: "ISO 27001:2022 Internal Auditor", link: null },
   ],
 };
 
@@ -25,6 +28,8 @@ export const experience = [
   {
     role: "Applications & Integrations Architect",
     company: "Universidad Tecnológica de Bolívar — DTIC",
+    logo: "/logos/utb.png",
+    logoBg: "none",
     period: "02/2026 — Present",
     points: [
       "Designed event-driven architectures with Apache Kafka (OCI Streaming) and OCI Queue, processing ~50K ERP events/month with resilience patterns.",
@@ -35,6 +40,8 @@ export const experience = [
   {
     role: "Backend Developer",
     company: "Zenoex — client: Colombian Computing Society (SCo2)",
+    logo: "/logos/zenoex.png",
+    logoBg: "none",
     period: "06/2026 — 07/2026",
     points: [
       "Built the membership management API with NestJS, TypeORM, and PostgreSQL 16 under hexagonal architecture.",
@@ -45,6 +52,8 @@ export const experience = [
   {
     role: "IT Developer — Integration & APIs",
     company: "Universidad Tecnológica de Bolívar — DTIC",
+    logo: "/logos/utb.png",
+    logoBg: "none",
     period: "06/2025 — 01/2026",
     points: [
       "Developed APIs and integrations with Oracle ORDS/PL-SQL and NestJS.",
@@ -54,6 +63,8 @@ export const experience = [
   {
     role: "Full Stack Developer — Healthcare",
     company: "Innovations Analytics",
+    logo: "/logos/innovations.png",
+    logoBg: "light",
     period: "10/2023 — 01/2026",
     points: [
       "Built a home-healthcare platform connecting patients, corporate clients, and care staff — from service request to PDF quote and contract.",
@@ -64,6 +75,8 @@ export const experience = [
   {
     role: "Backend Developer",
     company: "IncubApp",
+    logo: "/logos/incubapp.svg",
+    logoBg: "dark",
     period: "01/2024 — 01/2025",
     points: [
       "Backend services with NestJS and high-performance search with Elasticsearch — 60% latency reduction.",
@@ -99,20 +112,6 @@ export const projects = [
       "Containerized institutional ERP services and ran them on a Kubernetes (k3s) cluster with autoscaling (HPA) and sticky-session load balancing, with CI/CD pipelines pushing images to a private registry.",
     stack: ["Kubernetes", "Docker", "Jenkins", "OCI"],
     link: null,
-  },
-  {
-    title: "LMS High-Availability Platform",
-    description:
-      "High-availability learning platform lab: load balancing, autoscaling, and infrastructure as code.",
-    stack: ["Terraform", "OCI", "Docker"],
-    link: "https://github.com/DavidCarrero/lms-ha-platform",
-  },
-  {
-    title: "Cromia",
-    description:
-      "Objective skin-tone measurement (ITA over CIELAB) using computer vision — measures physical pigmentation.",
-    stack: ["Python", "OpenCV", "Computer Vision"],
-    link: "https://github.com/DavidCarrero/cromia",
   },
 ];
 
