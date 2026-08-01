@@ -122,7 +122,20 @@ export default function Experience() {
                 )}
               </div>
               <h3 className="text-xl font-semibold">{job.role}</h3>
-              <p className="text-muted text-sm mb-4">{job.company}</p>
+              <p className="text-muted text-sm mb-4">
+                {job.companyUrl ? (
+                  <a
+                    href={job.companyUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-accent transition-colors"
+                  >
+                    {job.company} ↗
+                  </a>
+                ) : (
+                  job.company
+                )}
+              </p>
               <ul className="space-y-2 text-sm text-muted leading-relaxed">
                 {job.points.map((pt) => (
                   <li key={pt} className="flex gap-2">

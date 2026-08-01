@@ -30,6 +30,7 @@ export const experience = [
     company: "Universidad Tecnológica de Bolívar — DTIC",
     logo: "/logos/utb.png",
     logoBg: "none",
+    companyUrl: "https://www.utb.edu.co",
     period: "02/2026 — Present",
     points: [
       "Designed event-driven architectures with Apache Kafka (OCI Streaming) and OCI Queue, processing ~50K ERP events/month with resilience patterns.",
@@ -42,6 +43,7 @@ export const experience = [
     company: "Zenoex — client: Colombian Computing Society (SCo2)",
     logo: "/logos/zenoex.png",
     logoBg: "none",
+    companyUrl: "https://zenoex.onrender.com",
     period: "06/2026 — 07/2026",
     points: [
       "Built the membership management API with NestJS, TypeORM, and PostgreSQL 16 under hexagonal architecture.",
@@ -54,6 +56,7 @@ export const experience = [
     company: "Universidad Tecnológica de Bolívar — DTIC",
     logo: "/logos/utb.png",
     logoBg: "none",
+    companyUrl: "https://www.utb.edu.co",
     period: "06/2025 — 01/2026",
     points: [
       "Developed APIs and integrations with Oracle ORDS/PL-SQL and NestJS.",
@@ -65,6 +68,7 @@ export const experience = [
     company: "Innovations Analytics",
     logo: "/logos/innovations.png",
     logoBg: "light",
+    companyUrl: "https://innovationsanalytics.com",
     period: "10/2023 — 01/2026",
     points: [
       "Built a home-healthcare platform connecting patients, corporate clients, and care staff — from service request to PDF quote and contract.",
@@ -78,6 +82,7 @@ export const experience = [
     company: "IncubApp",
     logo: "/logos/incubapp.svg",
     logoBg: "dark",
+    companyUrl: "https://incubapp.co",
     period: "01/2024 — 01/2025",
     points: [
       "Backend services with NestJS and high-performance search with Elasticsearch — 60% latency reduction.",
