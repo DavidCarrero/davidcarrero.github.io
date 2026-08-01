@@ -29,7 +29,7 @@ export const experience = [
     role: "Applications & Integrations Architect",
     company: "Universidad Tecnológica de Bolívar — DTIC",
     logo: "/logos/utb.png",
-    logoBg: "none",
+    logoBg: "light",
     companyUrl: "https://www.utb.edu.co",
     period: "02/2026 — Present",
     points: [
@@ -55,7 +55,7 @@ export const experience = [
     role: "IT Developer — Integration & APIs",
     company: "Universidad Tecnológica de Bolívar — DTIC",
     logo: "/logos/utb.png",
-    logoBg: "none",
+    logoBg: "light",
     companyUrl: "https://www.utb.edu.co",
     period: "06/2025 — 01/2026",
     points: [
