@@ -70,7 +70,7 @@ export const experience = [
       "Built a home-healthcare platform connecting patients, corporate clients, and care staff — from service request to PDF quote and contract.",
       "ASP.NET Core 9 + NestJS + React; JWT/RBAC security with tablet digital signature — approved on the first security review.",
       "Bulk Excel ingestion pipeline handling 50,000+ records per batch, with validation and automatic rollback.",
-      "Built NOVA, a multi-tenant platform for municipal governments: development plans aligned with UN SDGs, budget tracking, and evidence workflows on AWS S3 (ASP.NET Core, .NET 10, PostgreSQL).",
+      "Built Cratos, a multi-tenant government management platform for municipalities: development plans aligned with UN SDGs, budget tracking, and evidence workflows on AWS S3 (ASP.NET Core, .NET 10, PostgreSQL).",
     ],
   },
   {
@@ -87,9 +87,10 @@ export const experience = [
 
 export const projects = [
   {
-    title: "NOVA — Municipal Government Platform",
+    title: "Cratos — Government Management Platform",
+    logo: "/logos/cratos.png",
     description:
-      "Multi-tenant web platform for Colombian municipal governments (alcaldías): 4-year municipal development plans aligned with UN SDGs, budget tracking, and evidence-based activity monitoring with documents stored on AWS S3.",
+      "Multi-tenant platform for Colombian municipal governments (alcaldías): 4-year municipal development plans aligned with UN SDGs, budget tracking, and evidence-based activity monitoring with documents stored on AWS S3. Built at Innovations Analytics.",
     stack: ["ASP.NET Core", ".NET 10", "PostgreSQL", "EF Core", "AWS S3", "Docker"],
     link: null,
   },
