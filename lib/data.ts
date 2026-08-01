@@ -29,7 +29,7 @@ export const experience = [
     points: [
       "Designed event-driven architectures with Apache Kafka (OCI Streaming) and OCI Queue, processing ~50K ERP events/month with resilience patterns.",
       "Provisioned OCI and Azure infrastructure with Terraform — deployment time went from ~3 hours to ~20 minutes.",
-      "Authored the UTB OIC 3 Technical Standard (17 EIP patterns); integrations with Banner ERP, HubSpot CRM, and Microsoft Graph API.",
+      "Built pub/sub messaging on Apache Kafka and enterprise integrations with Banner ERP, HubSpot CRM, and Microsoft Graph API over REST, SOAP, and DB adapters.",
     ],
   },
   {
@@ -94,10 +94,10 @@ export const projects = [
     link: null,
   },
   {
-    title: "UTB OIC 3 Technical Standard",
+    title: "ERP Services on Kubernetes",
     description:
-      "Institutional integration governance framework: canonical naming, 17 Enterprise Integration Patterns with OCI implementation specs, and TEST→PROD lifecycle.",
-    stack: ["Oracle Integration Cloud", "EIP", "Governance"],
+      "Containerized institutional ERP services and ran them on a Kubernetes (k3s) cluster with autoscaling (HPA) and sticky-session load balancing, with CI/CD pipelines pushing images to a private registry.",
+    stack: ["Kubernetes", "Docker", "Jenkins", "OCI"],
     link: null,
   },
   {

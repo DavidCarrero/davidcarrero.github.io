@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import TechChip from "./TechChip";
 import { skills } from "@/lib/data";
 
 export default function Skills() {
@@ -16,9 +17,7 @@ export default function Skills() {
               <h3 className="font-mono text-sm text-accent mb-4">{g.group}</h3>
               <div className="flex flex-wrap gap-2">
                 {g.items.map((s) => (
-                  <span key={s} className="chip">
-                    {s}
-                  </span>
+                  <TechChip key={s} name={s} />
                 ))}
               </div>
             </div>

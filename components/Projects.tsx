@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import TechChip from "./TechChip";
 import { projects } from "@/lib/data";
 
 export default function Projects() {
@@ -27,9 +28,7 @@ export default function Projects() {
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {p.stack.map((s) => (
-                  <span key={s} className="chip">
-                    {s}
-                  </span>
+                  <TechChip key={s} name={s} />
                 ))}
               </div>
             </article>
