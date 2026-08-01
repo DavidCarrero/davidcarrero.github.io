@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
 const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
 
 const TECHS: { name: string; icon: string }[] = [
@@ -38,10 +43,32 @@ function Row() {
 }
 
 export default function TechMarquee() {
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const tween = gsap.to(track, {
+      xPercent: -50,
+      duration: 36,
+      ease: "none",
+      repeat: -1,
+    });
+    const pause = () => tween.pause();
+    const play = () => tween.play();
+    track.addEventListener("mouseenter", pause);
+    track.addEventListener("mouseleave", play);
+    return () => {
+      track.removeEventListener("mouseenter", pause);
+      track.removeEventListener("mouseleave", play);
+      tween.kill();
+    };
+  }, []);
+
   return (
     <section aria-label="Technologies" className="marquee-section">
       <div className="marquee">
-        <div className="marquee-track">
+        <div ref={trackRef} className="marquee-track">
           <Row />
           <Row />
         </div>
