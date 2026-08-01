@@ -25,8 +25,8 @@ export default function About() {
             ))}
             <p className="text-foreground">
               Currently working as an Applications &amp; Integrations Architect,
-              and always open to interesting backend, full stack, and cloud
-              challenges.
+              designing and governing enterprise architectures on Oracle Cloud
+              and Azure.
             </p>
           </div>
         </Reveal>

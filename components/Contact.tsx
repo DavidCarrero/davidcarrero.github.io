@@ -11,9 +11,8 @@ export default function Contact() {
             Let&apos;s build something <span className="text-gradient">together</span>
           </h2>
           <p className="text-muted max-w-xl mx-auto mb-9">
-            I&apos;m open to backend, full stack, architecture, and DevOps
-            opportunities. If my profile fits what you&apos;re looking for,
-            I&apos;d love to hear from you.
+            Interested in my work or want to discuss architecture, backend, or
+            cloud? Reach out — I&apos;d love to connect.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
