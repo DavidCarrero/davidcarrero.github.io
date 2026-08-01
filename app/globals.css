@@ -119,8 +119,11 @@ body {
 }
 
 .logo-box {
-  width: 44px;
+  width: auto;
+  min-width: 44px;
+  max-width: 120px;
   height: 44px;
+  padding: 0 6px;
   border-radius: 0.6rem;
   border: 1px solid var(--line);
   display: flex;
