@@ -164,15 +164,14 @@ export default function Hero() {
           className="relative hidden md:flex justify-center"
           style={{ visibility: "hidden" }}
         >
-          <div className="absolute inset-0 m-auto w-72 h-72 rounded-full bg-gradient-to-tr from-teal-400/40 to-blue-500/40 blur-2xl" />
           <div className="relative w-72 lg:w-80">
-            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-teal-400 to-blue-500 opacity-60 blur-sm" />
-            <div className="relative rounded-[2rem] overflow-hidden border border-line bg-gradient-to-b from-teal-400/15 via-blue-500/10 to-transparent">
+            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-teal-400 to-blue-500 opacity-50 blur-sm" />
+            <div className="relative rounded-[2rem] overflow-hidden border border-line">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/profile.png"
                 alt={site.fullName}
-                className="w-full h-auto object-contain pt-6"
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
